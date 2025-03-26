@@ -2,23 +2,23 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="text-center py-20 bg-white">
+    <div className="bg-white text-center mt-20 py-7 px-6 ">
       {/* Hero Heading */}
-      <h1 className="text-[#192657] text-3xl font-[900]">
+      <h1 className="text-[#192657] font-bold text-xl sm:text-4xl leading-tight max-w-3xl mx-auto">
         Fueling Innovation, Empowering Visionaries
       </h1>
 
       {/* Hero Subheading */}
-      <p className="mt-4 text-gray-600 text-lg max-w-2xl mx-auto">
+      <p className="text-gray-700 text-lg sm:text-xl max-w-2xl mx-auto mt-4">
         From idea to impact—unlock the tools, training, and network to turn your tech dreams into reality.
       </p>
 
       {/* Buttons */}
-      <div className="flex items-center justify-center space-x-4 mt-8">
-        <button className="bg-[#192657] px-6 py-3 text-white font-medium cursor-pointer rounded-md shadow-md ">
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-6">
+        <button className="bg-[#192657] cursor-pointer text-white px-6 py-3 text-lg rounded-lg shadow-md transition-all ">
           Register
         </button>
-        <button className="border border-[#192657] cursor-pointer px-6 py-3 text-[#192657] font-medium rounded-md hover:bg-gray-200 transition duration-300">
+        <button className="border border-[#192657] text-[#192657] px-6 py-3 text-lg rounded-lg shadow-md transition-all duration-200  cursor-pointer hover:bg-gray-50">
           Learn More
         </button>
       </div>
@@ -27,8 +27,8 @@ const Hero = () => {
       <div className="mt-12">
         <img
           src="/hero.png"
-          alt="Hero Image"
-          className="mx-auto w-[70%] rounded-lg shadow-md"
+          alt="Hero"
+          className="mx-auto max-w-full sm:max-w-[70%] rounded-lg shadow-lg"
         />
       </div>
     </div>
