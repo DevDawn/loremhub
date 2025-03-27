@@ -3,7 +3,7 @@ import React from 'react';
 const CallToAction = () => {
   return (
     <div className="py-20 px-6 flex flex-col items-center">
-      <h2 className="text-center text-[#192657] text-4xl font-bold mb-6">
+      <h2 className="text-center text-[#192657] md:text-4xl text-3xl font-bold mb-6">
         Don’t miss out on our Programs & Events
       </h2>
       <p className="text-center text-gray-600 max-w-2xl mb-8">

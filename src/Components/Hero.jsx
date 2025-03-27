@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <div className="bg-white text-center mt-20 py-7 px-6 ">
       {/* Hero Heading */}
-      <h1 className="text-[#192657] font-bold text-xl sm:text-4xl leading-tight max-w-3xl mx-auto">
+      <h1 className="text-[#192657] font-bold text-2xl sm:text-4xl leading-tight max-w-3xl mx-auto">
         Fueling Innovation, Empowering Visionaries
       </h1>
 
