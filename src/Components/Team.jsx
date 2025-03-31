@@ -29,22 +29,31 @@ const teamMembers = [
 
 const Team = () => {
   return (
-    <div className="py-20 px-6" id="team">
-      <h2 className="text-center text-[rgb(25,38,87)] text-4xl font-bold mb-12">
+    <div className="mt-[100.82px] px-4 sm:px-6 lg:px-8" id="team">
+      <h2 className="text-center text-[rgb(25,38,87)] text-3xl sm:text-4xl font-bold mb-8 sm:mb-12">
         Meet Our Team
       </h2>
 
-      <div  className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-        {teamMembers.map ((member, index) => (
-          <div key={index} className=" border-gray-500 border-2 rounded-lg p-6 text-center">
+      <div className="ml-auto mr-auto mt-[40px] max-w-[90%] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+        {teamMembers.map((member, index) => (
+          <div
+            key={index}
+            className="border-[#00000045] w-full max-w-[280px] border-[3px] sm:border-[5px] rounded-lg p-4 sm:p-6 text-center mx-auto"
+          >
             <img
               src={member.image}
               alt={member.name}
-              className="w-full h-auto mx-auto rounded-2xl object-cover mb-4"
+              className="w-[180px] h-[180px] sm:w-[222px] sm:h-[222px] mx-auto rounded-[20px] object-cover"
             />
-            <h3 className="text-[#192657] text-xl font-semibold">{member.name}</h3>
-            <p className="text-gray-500 font-medium">{member.role}</p>
-            <p className="text-gray-600 mt-2 text-sm">{member.description}</p>
+            <h3 className="text-[#192657] mt-[16px] sm:mt-[20px] text-[18px] sm:text-[20px] font-[700]">
+              {member.name}
+            </h3>
+            <p className="mt-[6px] sm:mt-[8px] font-[500] text-[14px] sm:text-[16px]">
+              {member.role}
+            </p>
+            <p className="text-[12px] sm:text-[14px] mt-[8px] sm:mt-[10px] font-[400]">
+              {member.description}
+            </p>
           </div>
         ))}
       </div>

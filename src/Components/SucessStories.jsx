@@ -54,27 +54,33 @@ const stories = [
 const SuccessStories = () => {
   return (
     <div className="py-10">
-      <h2 className="text-4xl text-center font-bold text-gray-800 mb-8">
+      <h2 className="text-3xl sm:text-4xl text-center font-bold text-gray-800 mb-8 px-4">
         Success Stories
       </h2>
 
       {/* Grid Layout for Responsiveness */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-6 lg:px-20">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-6 lg:px-20">
         {stories.map((story) => (
           <div
             key={story.id}
-            className="bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center text-center"
+            className="bg-white p-6 rounded-2xl flex flex-col items-center text-center"
           >
-            <p className="text-gray-700 text-sm mb-4">"{story.story}"</p>
+            <p className="text-gray-700 text-sm sm:text-base mb-4">
+              "{story.story}"
+            </p>
             <div className="flex flex-start text-left gap-3 mt-4">
               <img
                 src={story.image}
                 alt={story.name}
-                className="w-14 h-14 rounded-full object-cover"
+                className="w-12 h-12 sm:w-14 sm:h-14 rounded-full object-cover"
               />
               <div>
-                <h4 className="font-semibold text-gray-900">{story.name}</h4>
-                <p className="text-sm text-gray-500">{story.position}</p>
+                <h4 className="font-semibold text-gray-900 text-sm sm:text-base">
+                  {story.name}
+                </h4>
+                <p className="text-xs sm:text-sm text-gray-500">
+                  {story.position}
+                </p>
               </div>
             </div>
           </div>

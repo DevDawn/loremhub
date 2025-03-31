@@ -23,24 +23,29 @@ const events = [
 
 const Events = () => {
   return (
-    <div id='programs' className="py-20 px-6 text-center">
-      <h2 className="text-[#192657] text-4xl font-bold mb-12">
+    <div id='programs' className="py-20 px-4 sm:px-6 text-center">
+      <h2 className="text-[#192657] text-3xl sm:text-4xl font-bold mb-8 sm:mb-12">
         Upcoming Events Schedule
       </h2>
-      <div className="grid md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
         {events.map((event, index) => (
-          <div key={index} className="bg-white flex flex-col items-start p-4 rounded-lg">
-          <img
-            src={event.image}
-            alt={event.title}
-            className="w-full h-48 object-cover rounded-md mb-4"
-          />
-          <h3 className="text-lg font-semibold text-[#192657]">{event.title}</h3>
-          <p className="text-gray-600 text-sm mt-2">{event.date}</p>
-          <span className="bg-gray-300 w-[50px] rounded-2xl  text-[#192657] font-bold mt-2">
-            {event.description}
-          </span>
-        </div>
+          <div
+            key={index}
+            className="bg-white flex flex-col items-start p-4 rounded-lg"
+          >
+            <img
+              src={event.image}
+              alt={event.title}
+              className="w-full h-40 sm:h-48 object-cover rounded-md mb-4"
+            />
+            <h3 className="text-base sm:text-lg font-semibold text-[#192657]">
+              {event.title}
+            </h3>
+            <p className="text-gray-600 text-sm mt-2">{event.date}</p>
+            <span className="bg-gray-300 px-3 py-1 rounded-2xl text-[#192657] font-bold mt-2 text-sm">
+              {event.description}
+            </span>
+          </div>
         ))}
       </div>
     </div>

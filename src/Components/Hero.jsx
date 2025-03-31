@@ -2,33 +2,33 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="bg-white text-center mt-20 py-7 px-6 ">
+    <div className="flex flex-col items-center justify-center px-4 sm:px-8">
       {/* Hero Heading */}
-      <h1 className="text-[#192657] font-bold text-2xl sm:text-4xl leading-tight max-w-3xl mx-auto">
+      <h1 className="text-[#192657] mt-[50px] sm:mt-[99px] font-[700] text-[28px] sm:text-[40px] leading-[120%] font-['Poppins'] text-center">
         Fueling Innovation, Empowering Visionaries
       </h1>
 
       {/* Hero Subheading */}
-      <p className="text-gray-700 text-lg sm:text-xl max-w-2xl mx-auto mt-4">
-        From idea to impact—unlock the tools, training, and network to turn your tech dreams into reality.
+      <p className="mt-[16px] sm:mt-[21px] w-full sm:w-[899px] text-[16px] sm:text-[18px] text-center font-[500]">
+        From idea to impact—unlock the tools, training, and network to turn your tech dreams into reality. Let me know if you’d like any tweaks!
       </p>
 
       {/* Buttons */}
-      <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-6">
-        <button className="bg-[#192657] cursor-pointer text-white px-6 py-3 text-lg rounded-lg shadow-md transition-all ">
+      <div className="mt-[20px] sm:mt-[30px] flex flex-col sm:flex-row gap-[16px] sm:gap-[26px]">
+        <button className="bg-[#192657] w-full sm:w-[205px] rounded-[15px] h-[50px] text-white cursor-pointer">
           Register
         </button>
-        <button className="border border-[#192657] text-[#192657] px-6 py-3 text-lg rounded-lg shadow-md transition-all duration-200  cursor-pointer hover:bg-gray-50">
+        <button className="w-full sm:w-[205px] h-[50px] rounded-[15px] border border-[#192657] text-[#192657] cursor-pointer">
           Learn More
         </button>
       </div>
 
       {/* Hero Image */}
-      <div className="mt-12">
+      <div className="mt-[30px] sm:mt-[45px]">
         <img
           src="/hero.png"
           alt="Hero"
-          className="mx-auto max-w-full sm:max-w-[70%] rounded-lg shadow-lg"
+          className="w-full sm:w-[904px] h-auto sm:h-[427px] rounded-[20px]"
         />
       </div>
     </div>

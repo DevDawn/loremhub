@@ -80,19 +80,19 @@ const Testimonials = () => {
   }, [index]);
 
   return (
-    <div className="text-center py-10">
-      <h2 className="text-4xl font-bold text-gray-800 mb-8">
+    <div className="text-center py-10 px-4">
+      <h2 className="text-2xl md:text-4xl font-bold text-gray-800 mb-8">
         Mind-Blowing Testimonials
       </h2>
 
       {/* Testimonial Cards */}
-      <div className="flex justify-center gap-6 transition-all duration-700 ease-in-out">
+      <div className="flex flex-wrap justify-center gap-6 transition-all duration-700 ease-in-out">
         {testimonials
           .slice(index * itemsPerPage, index * itemsPerPage + itemsPerPage)
           .map((testimonial) => (
             <div
               key={testimonial.id}
-              className="bg-white p-6 rounded-2xl shadow-lg w-80 flex flex-col items-start text-left"
+              className="border-[#00000040] border-2 bg-white p-6 rounded-2xl w-full sm:w-72 md:w-80 flex flex-col items-start text-left"
             >
               <p className="text-gray-700 text-sm mb-4">"{testimonial.text}"</p>
               <div className="flex items-center gap-3 mt-4">

@@ -41,26 +41,28 @@ const services = [
 
 const Services = () => {
   return (
-    <div className="py-20 px-6" id="services">
-      <h2 className="text-center text-[#192657] text-4xl font-bold mb-12">
+    <div className="py-16 px-4 sm:px-6 lg:px-8" id="services">
+      <h2 className="text-center text-[#192657] text-3xl sm:text-4xl font-bold mb-10 sm:mb-12">
         Our Services
       </h2>
 
-      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
         {services.map((service, index) => (
           <div
             key={index}
-            className="bg-white rounded-lg p-6 text-center border border-gray-200"
+            className="bg-white rounded-lg p-4 sm:p-6 text-center border border-gray-200"
           >
             <img
               src={service.image}
               alt={service.title}
-              className="w-full h-40 object-cover rounded-md mb-4"
+              className="w-full h-36 sm:h-40 object-cover rounded-md mb-3 sm:mb-4"
             />
-            <h3 className="text-[#192657] text-xl font-semibold">
+            <h3 className="text-[#192657] text-lg sm:text-xl font-semibold">
               {service.title}
             </h3>
-            <p className="text-gray-600 mt-2 text-sm">{service.description}</p>
+            <p className="text-gray-600 mt-2 text-sm sm:text-base">
+              {service.description}
+            </p>
           </div>
         ))}
       </div>
